@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 function expandedAreaChart() {
     var _chart = {};
     var _margins = {top: 30, left: 30, right: 30, bottom: 30};
@@ -228,26 +228,26 @@ function expandedAreaChart() {
     return _chart;
 }
 
-// function randomData() {
-//     return Math.random() * 9;
-// }
-// var numberOfSeries = 4,
-//         numberOfDataPoint = 35,
-//         data = [];
+function randomData() {
+    return Math.random() * 9;
+}
+var numberOfSeries = 4,
+        numberOfDataPoint = 35,
+        data = [];
 
-// for (var i = 0; i < numberOfDataPoint; ++i){
-//     var obj = {};
-//     for (var j = 0; j < numberOfSeries; ++j){
-//         obj[j] = randomData();
-//     }
-//     data.push(obj);
-// }
-// var chart = expandedAreaChart()
-//         .outerDivId("graphHolder")
-//         .xScale(d3.scaleLinear().domain([0, numberOfDataPoint - 1]))
-//         .yScale(d3.scaleLinear().domain([0, 1]));
+for (var i = 0; i < numberOfDataPoint; ++i){
+    var obj = {};
+    for (var j = 0; j < numberOfSeries; ++j){
+        obj[j] = randomData();
+    }
+    data.push(obj);
+}
+var chart = expandedAreaChart()
+        .outerDivId("graphHolder")
+        .xScale(d3.scaleLinear().domain([0, numberOfDataPoint - 1]))
+        .yScale(d3.scaleLinear().domain([0, 1]));
 
 
-// chart.data(data);
+chart.data(data);
 
-// chart.render();
+chart.render();
