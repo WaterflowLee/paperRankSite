@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block body %}
+{% if err %}
+	<p><strong>Error</strong></p>:{{ err }}
+{% endif %}
+<form action="" method="POST">
+	<p>start:<input type="text" name="start"></p>
+	<p>end:<input type="text" name="end"></p>
+	<p><input type="submit" name="submit"></p>
+</form>
+{% endblock %}

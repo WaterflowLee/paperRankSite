@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{% block head %}
+	{{ super() }}
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'css/common.css') }}">
+{% endblock %}
+{% block body %}
+	<div id="toolbox">
+		<input type="checkbox" id="topId" name="topName" value="1" checked/>
+		<label for="topId">是否使用筛选后的数据集？</label>
+		<div class="toolbox_item">
+			<span>Time Range:</span><br>
+			<input type="text" id="time_range_start" class="text">
+			<br><span> To </span><br>
+			<input type="text" id="time_range_end" class="text">
+			<div id="slider_time_range"></div>
+			<span>1900</span><span style="float: right;">2015</span>
+			<br><span id="hint" style="visibility: hidden;"></span>
+			<input type="button" id="request" value="request" style="float: right;"><br>
+		</div>
+		
+		<div class="toolbox_item">
+			<span>Interval:</span><br>
+			<input type="text" id="interval" class="text">
+			<div id="slider_interval"></div>
+			<span>1</span><span style="float: right;">30</span>
+		</div>
+		<div class="toolbox_item">
+			<span>Threshold:</span><br>
+			<input type="text" id="threshold" class="text">
+			<div id="slider_threshold"></div>
+			<span id="min_loss_value">1</span>
+			<span id="max_loss_value" style="float: right;">NaN</span>
+		</div>
+	</div>
+	<div id="graphHolder"></div>
+	<div id="info">
+		<span>ID:</span><br>
+		<span id="id" class="em"></span><br>
+		<span>name:</span><br>
+		<span id="name" class="em"></span><br>
+		<span>journal:</span><br>
+		<span id="journal" class="em"></span><br>
+		<span>eigen:</span><br>
+		<span id="eigen" class="em"></span><br>
+		<span>time:</span><br>
+		<span id="time" class="em"></span>
+		<div id="accordion" >
+			<h3>Citations</h3>
+			<div id="citations" style="height: 200px">
+	  		</div>
+	  		<h3>Reference weight</h3>
+	  		<div id="referenceWeight" style="height: 200px">
+	  		</div>
+  		</div>
+	</div>
+	<div id="lossValueInfo">
+		<span id="lossValueSpan" style="visibility: hidden;position: absolute;left: 40%">lossValueChart</span>
+		<div id="lossValueChart"></div>
+	</div>
+	<div id="MarginalLossValueInfo">
+		<span id="MarginalLossValueSpan" style="visibility: hidden;position: absolute;left: 40%">MarginalLossValueInfo</span>
+		<div id="MarginalLossValueChart"></div>
+	</div>
+{% endblock %}
+{% block script %}
+	{{ super() }}
+	<script src="{{ url_for('static', filename='lineChart.js') }}"></script>
+	<script src="{{ url_for('static', filename='papernet.js') }}"></script>
+{% endblock %}

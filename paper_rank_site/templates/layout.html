@@ -1,0 +1,15 @@
+<!doctype html>
+<meta charset="utf-8">
+<!-- <title>Paper Rank</title> -->
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/jquery-ui.min.css') }}">
+{% endblock %}
+
+{% block body %}{% endblock %}
+{% block script %}
+<script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='d3.v4.js') }}"></script>
+<script src="{{ url_for('static', filename='jquery-ui.min.js') }}"></script>
+<script src="{{ url_for('static', filename='underscore-min.js') }}"></script>
+{% endblock %}
