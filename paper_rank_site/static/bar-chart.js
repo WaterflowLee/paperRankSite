@@ -136,7 +136,7 @@ function barChart() {
                 return _yScale(d.y); // <-D
             })
             .attr("height", function (d) {
-                return yStart() - _yScale(d.y) - 30;
+                return yStart() - _yScale(d.y) - yEnd();
             })
             .attr("width", function(d){
                 return Math.floor(quadrantWidth() / _data.length) - padding;
@@ -231,7 +231,7 @@ var numberOfDataPoint = 31,
     data;
 
 data = d3.range(numberOfDataPoint).map(function (i) {
-    return {x: i, y: 1};
+    return {x: i, y: randomData()};
 });
 
 var chart = barChart().outerDivId("graphHolder")

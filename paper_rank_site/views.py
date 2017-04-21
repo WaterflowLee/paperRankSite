@@ -45,8 +45,6 @@ def papers(top):
 	elif request.method == "POST":
 		start = request.form.get("start", "")
 		end = request.form.get("end", "")
-		print start
-		print end
 		if (start == "") or (end == ""):
 			err = "The start and end should not be null"
 			return render_template("papers.html", err=err)
