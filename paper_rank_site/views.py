@@ -69,3 +69,6 @@ def papernet():
 @app.route("/stackedarea/", methods=["GET"])
 def stackedarea():
 	return render_template("stackedarea.html")
+@app.route("/barchart/", methods=["GET"])
+def barchart():
+	return render_template("barchart.html")

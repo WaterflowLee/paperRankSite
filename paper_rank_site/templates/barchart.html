@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/common.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/stackedarea.css') }}">
+{% endblock %}
+{% block body %}
+<div id="graphHolder"></div>
+<div id="toolbox">
+    <div class="toolbox_item">
+        <span>Time Range:</span><br>
+        <input type="text" id="time_range_start" class="text">
+        <br><span> To </span><br>
+        <input type="text" id="time_range_end" class="text">
+        <div id="slider_time_range"></div>
+        <span>1900</span><span style="float: right;">2015</span>
+        <br><span id="hint" style="visibility: hidden;"></span>
+        <input type="button" id="request" value="request" style="float: right;"><br>
+    </div>
+
+    <div class="toolbox_item">
+        <span>Threshold:</span><br>
+        <input type="text" id="threshold" class="text">
+        <div id="slider_threshold"></div>
+        <span id="min_loss_value">1</span>
+        <span id="max_loss_value" style="float: right;">NaN</span>
+    </div>
+</div>
+{% endblock %}
+{% block script %}
+{{ super() }}
+<script src="{{ url_for('static', filename='barChart.js') }}"></script>
+{% endblock %}

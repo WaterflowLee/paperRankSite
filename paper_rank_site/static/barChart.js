@@ -1,77 +1,115 @@
+'use strict'
 function barChart() {
     var _chart = {};
-
-    var _width = 600, _height = 250,
-        _margins = {top: 30, left: 30, right: 30, bottom: 30},
-        _x, _y,
-        _data = [],
-        _colors = d3.scale.category10(),
+    var _margins = {top: 30, left: 30, right: 30, bottom: 30};
+    var _xScale, _yScale, _data, _outerDivId,
+        _colors = d3.scaleOrdinal(d3.schemeCategory10),
         _svg,
-        _bodyG;
+        _bodyG,
+        _axesG;
+    var _width, _height;
 
     _chart.render = function () {
         if (!_svg) {
-            _svg = d3.select("body").append("svg")
+            var selector = "div#" + _outerDivId;
+            _width = $(selector).width();
+            _height = $(selector).height();
+            _svg = d3.select(selector).append("svg")
                 .attr("height", _height)
                 .attr("width", _width);
 
-            renderAxes(_svg);
+            renderAxes();
 
-            defineBodyClip(_svg);
+            defineMainBodyClip();
         }
 
-        renderBody(_svg);
+        renderBody();
     };
 
-    function renderAxes(svg) {
-        var axesG = svg.append("g")
+    function renderAxes() {
+        _axesG = _svg.append("g")
             .attr("class", "axes");
-
-        var xAxis = d3.svg.axis()
-            .scale(_x.range([0, quadrantWidth()]))
-            .orient("bottom");
-
-        var yAxis = d3.svg.axis()
-            .scale(_y.range([quadrantHeight(), 0]))
-            .orient("left");
-
-        axesG.append("g")
-            .attr("class", "axis")
+        renderXAxis();
+        renderYAxis();
+    }
+    function renderXAxis () {
+        _xScale = _xScale.range([0, quadrantWidth()]);
+        var xAxis = d3.axisBottom(_xScale);
+        _axesG.append("g")
+            .attr("class", "x axis")
             .attr("transform", function () {
                 return "translate(" + xStart() + "," + yStart() + ")";
             })
             .call(xAxis);
-
-        axesG.append("g")
-            .attr("class", "axis")
+        // d3.selectAll("g.x g.tick")
+        //     .append("line")
+        //     .classed("grid-line", true)
+        //     .attr("x1", 0)
+        //     .attr("y1", 0)
+        //     .attr("x2", 0)
+        //     .attr("y2", -quadrantHeight());
+    }
+    // var xAxis = d3.svg.axis()
+    //     .scale(_x.range([0, quadrantWidth()]))
+    //     .orient("bottom");
+    //
+    // var yAxis = d3.svg.axis()
+    //     .scale(_y.range([quadrantHeight(), 0]))
+    //     .orient("left");
+    //
+    // axesG.append("g")
+    //     .attr("class", "axis")
+    //     .attr("transform", function () {
+    //         return "translate(" + xStart() + "," + yStart() + ")";
+    //     })
+    //     .call(xAxis);
+    //
+    // axesG.append("g")
+    //     .attr("class", "axis")
+    //     .attr("transform", function () {
+    //         return "translate(" + xStart() + "," + yEnd() + ")";
+    //     })
+    //     .call(yAxis);
+    function renderYAxis() {
+        _yScale = _yScale.range([quadrantHeight(), 0]);
+        var yAxis = d3.axisLeft(_yScale);
+        _axesG.append("g")
+            .attr("class", "y axis")
             .attr("transform", function () {
                 return "translate(" + xStart() + "," + yEnd() + ")";
             })
             .call(yAxis);
-    }
 
-    function defineBodyClip(svg) {
+        // d3.selectAll("g.y g.tick")
+        //     .append("line")
+        //     .classed("grid-line", true)
+        //     .attr("x1", 0)
+        //     .attr("y1", 0)
+        //     .attr("x2", quadrantWidth())
+        //     .attr("y2", 0);
+    }
+    function defineMainBodyClip() {
         var padding = 5;
 
-        svg.append("defs")
+        _svg.append("defs")
             .append("clipPath")
-            .attr("id", "body-clip")
+            .attr("id", "MainBodyClip")
             .append("rect")
-            .attr("x", 0)
+            .attr("x", 0 - 2 * padding)
             .attr("y", 0)
             .attr("width", quadrantWidth() + 2 * padding)
-            .attr("height", quadrantHeight());
+            .attr("height", quadrantHeight() + 2 * padding);
     }
 
-    function renderBody(svg) {
+    function renderBody() {
         if (!_bodyG)
-            _bodyG = svg.append("g")
+            _bodyG = _svg.append("g")
                 .attr("class", "body")
                 .attr("transform", "translate("
                     + xStart()
                     + ","
                     + yEnd() + ")")
-                .attr("clip-path", "url(#body-clip)");
+                .attr("clip-path", "url(#MainBodyClip)");
 
         renderBars();
     }
@@ -83,19 +121,22 @@ function barChart() {
             .data(_data)
             .enter()
             .append("rect") // <-B
-            .attr("class", "bar");
+            .attr("class", "bar")
+            .attr("id", function (d,i) {
+                return i;
+            });
 
         _bodyG.selectAll("rect.bar")
             .data(_data)
             .transition()
             .attr("x", function (d) {
-                return _x(d.x); // <-C
+                return _xScale(d.x); // <-C
             })
             .attr("y", function (d) {
-                return _y(d.y); // <-D
+                return _yScale(d.y); // <-D
             })
             .attr("height", function (d) {
-                return yStart() - _y(d.y);
+                return yStart() - _yScale(d.y) - 30;
             })
             .attr("width", function(d){
                 return Math.floor(quadrantWidth() / _data.length) - padding;
@@ -109,6 +150,9 @@ function barChart() {
     function yStart() {
         return _height - _margins.bottom;
     }
+    _chart.yStart = function () {
+        return yStart();
+    };
 
     function xEnd() {
         return _width - _margins.right;
@@ -117,7 +161,9 @@ function barChart() {
     function yEnd() {
         return _margins.top;
     }
-
+    _chart.yEnd = function () {
+        return yEnd();
+    };
     function quadrantWidth() {
         return _width - _margins.left - _margins.right;
     }
@@ -150,23 +196,30 @@ function barChart() {
         return _chart;
     };
 
-    _chart.x = function (x) {
-        if (!arguments.length) return _x;
-        _x = x;
+    _chart.xScale = function (x) {
+        if (!arguments.length) return _xScale;
+        _xScale = x;
         return _chart;
     };
 
-    _chart.y = function (y) {
-        if (!arguments.length) return _y;
-        _y = y;
+    _chart.yScale = function (y) {
+        if (!arguments.length) return _yScale;
+        _yScale = y;
         return _chart;
     };
 
-    _chart.setSeries = function (series) {
-        _data = series;
+    _chart.data = function (d) {
+        if(!arguments.length){
+            return _data;
+        }
+        _data = d;
         return _chart;
     };
-
+    _chart.outerDivId = function (id){
+        if(!arguments.length) return _outerDivId;
+        _outerDivId = id;
+        return _chart;
+    };
     return _chart;
 }
 
@@ -174,26 +227,18 @@ function randomData() {
     return Math.random() * 9;
 }
 
-function update() {
-    data.length = 0;
-    for (var j = 0; j < numberOfDataPoint; ++j)
-        data.push({x: j, y: randomData()});
-
-    chart.render();
-}
-
 var numberOfDataPoint = 31,
-    data = [];
+    data;
 
 data = d3.range(numberOfDataPoint).map(function (i) {
-    return {x: i, y: randomData()};
+    return {x: i, y: 1};
 });
 
-var chart = barChart()
-    .x(d3.scale.linear().domain([-1, 32]))
-    .y(d3.scale.linear().domain([0, 10]));
+var chart = barChart().outerDivId("graphHolder")
+    .xScale(d3.scaleLinear().domain([0, 31]))
+    .yScale(d3.scaleLinear().domain([0, 10]));
 
 
-chart.setSeries(data);
+chart.data(data);
 
 chart.render();
