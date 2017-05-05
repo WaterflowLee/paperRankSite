@@ -29,5 +29,6 @@
 {% endblock %}
 {% block script %}
 {{ super() }}
+<script src="{{ url_for('static', filename='js/fundamental/chart.js') }}"></script>
 <script src="{{ url_for('static', filename='js/fundamental/bar-chart.js') }}"></script>
 {% endblock %}
