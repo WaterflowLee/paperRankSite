@@ -1,15 +1,26 @@
-<!doctype html>
-<meta charset="utf-8">
-<!-- <title>Paper Rank</title> -->
-
-{% block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename = 'css/jquery-ui.min.css') }}">
-{% endblock %}
-
-{% block body %}{% endblock %}
-{% block script %}
-<script src="{{ url_for('static', filename='js/fundamental/jquery.min.js') }}"></script>
-<script src="{{ url_for('static', filename='js/fundamental/jquery-ui.min.js') }}"></script>
-<script src="{{ url_for('static', filename='js/fundamental/underscore-min.js') }}"></script>
-<script src="{{ url_for('static', filename='js/fundamental/d3.v4.js') }}"></script>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    {% block title %}{% endblock %}
+    {% block css %}
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'css/third-party/jquery-ui.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'css/third-party/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'css/third-party/bootstrap-theme.css') }}">
+    {% endblock %}
+</head>
+<body>
+    {% block body %}{% endblock %}
+    {% block script %}
+        <script src="{{ url_for('static', filename='js/third-party/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/third-party/jquery-ui.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/third-party/bootstrap.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/third-party/underscore-min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/third-party/backbone.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/third-party/d3.v4.js') }}"></script>
+    {% endblock %}
+</body>
+</html>

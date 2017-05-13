@@ -11,9 +11,9 @@ def connect_db():
 	return client.paper_rank
 
 
-@app.before_request
-def before_request():
-	g.conn = connect_db()
+#@app.before_request
+#def before_request():
+#	g.conn = connect_db()
 
 
 @app.after_request
@@ -103,6 +103,9 @@ def scatterchart():
 def estimate_loss_function():
 	return render_template("estimate-loss-function.html")
 
+@app.route("/figures/", methods=["GET"])
+def figures():
+	return render_template("figures.html")
 
 # 直接返回数据对象[], {}是不行的，必须经过 json.dumps() 字符串化
 @app.route("/data/<path:filename>", methods=["GET"])
