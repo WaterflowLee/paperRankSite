@@ -1,0 +1,36 @@
+.line{
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 2;
+}
+.dot {
+	fill: #fff;
+	stroke: steelblue;
+}
+
+.area {
+	stroke: none;
+	fill: steelblue;
+	fill-opacity: .2;
+}
+
+.bar{
+	stroke: none;
+	fill: steelblue;
+}
+
+.axis path, .axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.axis text {
+	font: 10px sans-serif;
+}
+
+.axis .grid-line{
+	stroke: black;
+	shape-rendering: crispEdges;
+	stroke-opacity: .2;
+}

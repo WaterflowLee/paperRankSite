@@ -35,7 +35,8 @@ function paperNet(){
 	};
 	// 一条link中的source 和 target 默认应该放的是nodes中两个不同的node对象
 	//我现在放的是字符串肯定不行啊，可以模仿像langnet那样用的是node对象在nodes数组中的index
-	function d3Id(id, prefix=""){
+	function d3Id(id, prefix){
+		prefix = prefix?prefix:"";
 		return prefix + id.replace(".", "-").replace(":", "_");
 	}
 	_netChart.drawNetwork = function() {

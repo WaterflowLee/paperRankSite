@@ -89,6 +89,16 @@ def barchart():
 	return render_template("bar-chart.html")
 
 
+@app.route("/linechart/", methods=["GET"])
+def linechart():
+	return render_template("line-chart.html")
+
+
+@app.route("/scatterchart/", methods=["GET"])
+def scatterchart():
+	return render_template("scatter-chart.html")
+
+
 @app.route("/estimate-loss-function/", methods=["GET"])
 def estimate_loss_function():
 	return render_template("estimate-loss-function.html")

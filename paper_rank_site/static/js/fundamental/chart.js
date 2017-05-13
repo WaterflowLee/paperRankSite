@@ -7,36 +7,39 @@ function Chart(id) {
 }
 
 Chart.prototype.render = function () {
-    if (!this._svg) {
-        var selector = "div#" + this._outerDivId;
-        this._width = $(selector).width();
-        this._height = $(selector).height();
-        this._svg = d3.select(selector).append("svg")
-            .attr("height", this._height)
-            .attr("width", this._width);
+    var self = this;
+    if (!self._svg) {
+        var selector = "div#" + self._outerDivId;
+        self._width = $(selector).width();
+        self._height = $(selector).height();
+        self._svg = d3.select(selector).append("svg")
+            .attr("height", self._height)
+            .attr("width", self._width);
 
-        // this.renderAxes();
+        self.renderAxes();
 
-        this.defineMainBodyClip();
+        self.defineMainBodyClip();
     }
 
-    this.renderBody();
+    self.renderBody();
 };
 
 Chart.prototype.renderAxes = function () {
-    this._axesG = this._svg.append("g")
+    var self = this;
+    self._axesG = self._svg.append("g")
         .attr("class", "axes");
-    this.renderXAxis();
-    this.renderYAxis();
+    self.renderXAxis();
+    self.renderYAxis();
 };
 
 Chart.prototype.renderXAxis = function  () {
-    this._xScale = this._xScale.range([0, this.quadrantWidth()]);
-    var xAxis = d3.axisBottom(this._xScale);
-    this._axesG.append("g")
+    var self = this;
+    self._xScale = self._xScale.range([0, self.quadrantWidth()]);
+    var xAxis = d3.axisBottom(self._xScale);
+    self._axesG.append("g")
         .attr("class", "x axis")
         .attr("transform", function () {
-            return "translate(" + this.xStart() + "," + this.yStart() + ")";
+            return "translate(" + self.xStart() + "," + self.yStart() + ")";
         })
         .call(xAxis);
     d3.selectAll("g.x g.tick")
@@ -45,16 +48,17 @@ Chart.prototype.renderXAxis = function  () {
         .attr("x1", 0)
         .attr("y1", 0)
         .attr("x2", 0)
-        .attr("y2", -this.quadrantHeight());
+        .attr("y2", -self.quadrantHeight());
 };
 
 Chart.prototype.renderYAxis = function () {
-    this._yScale = this._yScale.range([this.quadrantHeight(), 0]);
-    var yAxis = d3.axisLeft(this._yScale);
-    this._axesG.append("g")
+    var self = this;
+    self._yScale = self._yScale.range([self.quadrantHeight(), 0]);
+    var yAxis = d3.axisLeft(self._yScale);
+    self._axesG.append("g")
         .attr("class", "y axis")
         .attr("transform", function () {
-            return "translate(" + this.xStart() + "," + this.yEnd() + ")";
+            return "translate(" + self.xStart() + "," + self.yEnd() + ")";
         })
         .call(yAxis);
 
@@ -63,31 +67,33 @@ Chart.prototype.renderYAxis = function () {
         .classed("grid-line", true)
         .attr("x1", 0)
         .attr("y1", 0)
-        .attr("x2", this.quadrantWidth())
+        .attr("x2", self.quadrantWidth())
         .attr("y2", 0);
 };
 
  Chart.prototype.defineMainBodyClip = function() {
-    this._svg.append("defs")
+    var self = this;
+    self._svg.append("defs")
         .append("clipPath")
         .attr("id", "MainBodyClip")
         .append("rect")
-        .attr("x", 0 - 2 * this._padding)
+        .attr("x", 0 - 2 * self._padding)
         .attr("y", 0)
-        .attr("width", this.quadrantWidth() + 2 * this._padding)
-        .attr("height", this.quadrantHeight() + 2 * this._padding);
+        .attr("width", self.quadrantWidth() + 2 * self._padding)
+        .attr("height", self.quadrantHeight() + 2 * self._padding);
 };
 
 Chart.prototype.renderBody = function() {
-    if (!this._bodyG)
-        this._bodyG = this._svg.append("g")
+    var self = this;
+    if (!self._bodyG)
+        self._bodyG = self._svg.append("g")
             .attr("class", "body")
             .attr("transform", "translate("
-                + this.xStart()
+                + self.xStart()
                 + ","
-                + this.yEnd() + ")")
+                + self.yEnd() + ")")
             .attr("clip-path", "url(#MainBodyClip)");
-    return this;
+    return self;
 };
 
 Chart.prototype.data = function (d) {

@@ -1,30 +1,30 @@
 var renderBars = function () {
+    var self = this;
+    var padding = 2;
 
-    var padding = 2; // <-A
-
-    this._bodyG.selectAll("rect.bar")
-        .data(this._data)
+    self._bodyG.selectAll("rect.bar")
+        .data(self._data)
         .enter()
-        .append("rect") // <-B
+        .append("rect")
         .attr("class", "bar")
         .attr("id", function (d,i) {
             return i;
         });
 
-    this._bodyG.selectAll("rect.bar")
-        .data(this._data)
+    self._bodyG.selectAll("rect.bar")
+        .data(self._data)
         .transition()
         .attr("x", function (d) {
-            return this._xScale(d.x); // <-C
+            return self._xScale(d.x);
         })
         .attr("y", function (d) {
-            return this._yScale(d.y); // <-D
+            return self._yScale(d.y);
         })
         .attr("height", function (d) {
-            return this.yStart() - this._yScale(d.y) - this.yEnd();
+            return self.yStart() - self._yScale(d.y) - self.yEnd();
         })
         .attr("width", function(d){
-            return Math.floor(this.quadrantWidth() / this._data.length) - padding;
+            return Math.floor(self.quadrantWidth() / self._data.length) - padding;
         });
 };
 

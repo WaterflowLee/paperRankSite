@@ -213,6 +213,7 @@ function drawLossValueChart(lossValue, divId){
 	$(".dot, .line").css("fill", "#FFF");
 }
 
-function d3Id(id, prefix=""){
+function d3Id(id, prefix){
+	prefix = prefix?prefix:"";
 	return prefix + id.replace(".", "-").replace(":", "_");
 }
