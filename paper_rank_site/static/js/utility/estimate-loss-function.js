@@ -1,4 +1,3 @@
-// 逐步去掉对 underscore 的依赖
 $.getJSON("/data/estimate_loss_function.15.20.json", function (echoData) {
     var nodes = [];
     // slice() 方法返回一个从开始到结束（不包括结束）的数组的一部分浅拷贝到一个新数组对象

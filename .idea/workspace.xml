@@ -2,14 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e72978e7-6804-4195-8f27-283f7f21a01d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paper_rank_site/static/css/jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paper_rank_site/static/js/fundamental/d3.v4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paper_rank_site/static/js/fundamental/jquery-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paper_rank_site/static/js/fundamental/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paper_rank_site/static/js/fundamental/underscore-min.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paper_rank_site/restful_api/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paper_rank_site/static/js/utility/paper-net-index.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paper_rank_site/data/estimate_loss_function.15.20.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paper_rank_site/data/estimate_loss_function.20.20.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paper_rank_site/data/estimate_loss_function.25.20.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paper_rank_site/data/estimate_loss_function.30.20.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paper_rank_site/restful-api/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paper_rank_site/static/css/images/ui-icons_444444_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paper_rank_site/static/css/images/ui-icons_555555_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paper_rank_site/static/css/images/ui-icons_777620_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paper_rank_site/static/css/images/ui-icons_777777_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paper_rank_site/static/css/images/ui-icons_cc0000_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paper_rank_site/static/css/images/ui-icons_ffffff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paper_rank_site/static/js/utility/paper-index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runserver.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/paper_rank_site/restful-api/__init__.py" afterPath="$PROJECT_DIR$/paper_rank_site/restful_api/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/paper_rank_site/restful-api/errors.py" afterPath="$PROJECT_DIR$/paper_rank_site/restful_api/errors.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/action plan.docx" afterPath="$PROJECT_DIR$/action plan.docx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paper_rank_site/__init__.py" afterPath="$PROJECT_DIR$/paper_rank_site/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paper_rank_site/main/views.py" afterPath="$PROJECT_DIR$/paper_rank_site/main/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paper_rank_site/static/css/chart.css" afterPath="$PROJECT_DIR$/paper_rank_site/static/css/chart.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paper_rank_site/static/css/common.css" afterPath="$PROJECT_DIR$/paper_rank_site/static/css/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paper_rank_site/static/js/fundamental/chart.js" afterPath="$PROJECT_DIR$/paper_rank_site/static/js/fundamental/chart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paper_rank_site/static/js/fundamental/expanded-area-chart.js" afterPath="$PROJECT_DIR$/paper_rank_site/static/js/fundamental/expanded-area-chart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paper_rank_site/static/js/fundamental/line-chart.js" afterPath="$PROJECT_DIR$/paper_rank_site/static/js/fundamental/line-chart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paper_rank_site/static/js/fundamental/paper-net.js" afterPath="$PROJECT_DIR$/paper_rank_site/static/js/fundamental/paper-net.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paper_rank_site/static/js/utility/estimate-loss-function.js" afterPath="$PROJECT_DIR$/paper_rank_site/static/js/utility/estimate-loss-function.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paper_rank_site/templates/bar-chart.html" afterPath="$PROJECT_DIR$/paper_rank_site/templates/bar-chart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paper_rank_site/templates/figures.html" afterPath="$PROJECT_DIR$/paper_rank_site/templates/figures.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paper_rank_site/templates/layout.html" afterPath="$PROJECT_DIR$/paper_rank_site/templates/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paper_rank_site/templates/paper-net.html" afterPath="$PROJECT_DIR$/paper_rank_site/templates/paper-net.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paper_rank_site/views.py" afterPath="$PROJECT_DIR$/paper_rank_site/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pual.txt" afterPath="$PROJECT_DIR$/pual.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,93 +48,140 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/paper_rank_site$Unittests_in_config_py.coverage" NAME="Unittests in config.py Coverage Results" MODIFIED="1494668776883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paper_rank_site/restful-api/__init__.py">
+      <file leaf-file-name="paper-net.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paper_rank_site/templates/paper-net.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="11" />
+            <state relative-caret-position="720">
+              <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+              <folding>
+                <marker date="1497376391834" expanded="true" signature="595:634" ph="{...}" />
+                <marker date="1497376391834" expanded="true" signature="727:732" ph="{...}" />
+                <marker date="1497376391834" expanded="true" signature="821:834" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="835:2154" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="919:2146" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="949:1453" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="1036:1052" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="1076:1092" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="1160:1176" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="1267:1280" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="1325:1344" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="1415:1442" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="1491:1502" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="1503:1715" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="1580:1596" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="1682:1695" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="1745:2137" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="1830:1846" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="1870:1886" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="1955:1971" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="2103:2116" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="2203:2216" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="2217:3056" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="2262:2399" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="2279:2290" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="2319:2330" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="2347:2358" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="2379:2390" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="2433:3048" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="2463:2719" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="2757:2768" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="2799:3039" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="2816:2827" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="2881:2892" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="2893:2907" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="2926:2937" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="3005:3016" ph="..." />
+                <marker date="1497376391834" expanded="true" signature="3017:3029" ph="..." />
+                <marker date="1497376391834" expanded="false" signature="3825:3838" ph="..." />
+                <marker date="1497376391834" expanded="false" signature="3943:3956" ph="..." />
+                <marker date="1497376391834" expanded="false" signature="4085:4132" ph="..." />
+                <marker date="1497376391834" expanded="false" signature="4302:4349" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="line-chart.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/line-chart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="errors.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paper_rank_site/restful-api/errors.py">
+      <file leaf-file-name="paper-net-index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/utility/paper-net-index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="18">
+              <caret line="289" column="51" lean-forward="false" selection-start-line="289" selection-start-column="23" selection-end-line="289" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paper-net.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/paper-net.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3168">
+              <caret line="176" column="9" lean-forward="false" selection-start-line="176" selection-start-column="9" selection-end-line="176" selection-end-column="9" />
+              <folding>
+                <marker date="1497376456928" expanded="true" signature="1048:1106" ph="{...}" />
+                <marker date="1497376456928" expanded="true" signature="5420:5472" ph="{...}" />
+                <marker date="1497376456928" expanded="true" signature="5420:5475" ph="{...}" />
+                <marker date="1497376456928" expanded="true" signature="5514:5623" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="figures.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paper_rank_site/templates/figures.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#1;n#div#1;n#div#3;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="figures.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/utility/figures.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4626">
+              <caret line="257" column="33" lean-forward="false" selection-start-line="257" selection-start-column="33" selection-end-line="257" selection-end-column="33" />
+              <folding>
+                <marker date="1497406860316" expanded="true" signature="8807:8837" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paper_rank_site/static/css/common.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2232">
+              <caret line="124" column="1" lean-forward="false" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paper_rank_site/restful-api/views.py">
+        <entry file="file://$PROJECT_DIR$/paper_rank_site/restful_api/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="2430">
+              <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paper_rank_site/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paper_rank_site/main/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="errors.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paper_rank_site/main/errors.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pual.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pual.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="55" lean-forward="true" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paper_rank_site/main/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#15#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,8 +192,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -131,6 +205,9 @@
       <find>_margins</find>
       <find>scale</find>
       <find>con</find>
+      <find>click</find>
+      <find>d3I</find>
+      <find>self</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,7 +222,6 @@
         <option value="$PROJECT_DIR$/paper_rank_site/static/paper-net.js" />
         <option value="$PROJECT_DIR$/paper_rank_site/static/papernet.js" />
         <option value="$PROJECT_DIR$/paper_rank_site/static/bar-chart.js" />
-        <option value="$PROJECT_DIR$/paper_rank_site/static/css/common.css" />
         <option value="$PROJECT_DIR$/paper_rank_site/static/paper-index.js" />
         <option value="$PROJECT_DIR$/paper_rank_site/templates/estimate-loss-function.js" />
         <option value="$PROJECT_DIR$/paper_rank_site/static/estimate-loss-function.js" />
@@ -156,26 +232,40 @@
         <option value="$PROJECT_DIR$/paper_rank_site/static/css/barchart.css" />
         <option value="$PROJECT_DIR$/paper_rank_site/templates/barchart.html" />
         <option value="$PROJECT_DIR$/paper_rank_site/templates/estimate-loss-function.html" />
-        <option value="$PROJECT_DIR$/paper_rank_site/templates/bar-chart.html" />
         <option value="$PROJECT_DIR$/paper_rank_site/templates/stacked-area.html" />
         <option value="$PROJECT_DIR$/runserver.py" />
-        <option value="$PROJECT_DIR$/paper_rank_site/static/js/utility/estimate-loss-function.js" />
         <option value="$PROJECT_DIR$/paper_rank_site/static/js/third-party/backbone.js" />
-        <option value="$PROJECT_DIR$/paper_rank_site/templates/layout.html" />
-        <option value="$PROJECT_DIR$/paper_rank_site/templates/figures.html" />
-        <option value="$PROJECT_DIR$/paper_rank_site/views.py" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/paper_rank_site/main/__init__.py" />
         <option value="$PROJECT_DIR$/paper_rank_site/main/errors.py" />
         <option value="$PROJECT_DIR$/paper_rank_site/manage.py" />
         <option value="$PROJECT_DIR$/tests/test_basics.py" />
-        <option value="$PROJECT_DIR$/manage.py" />
-        <option value="$PROJECT_DIR$/paper_rank_site/__init__.py" />
         <option value="$PROJECT_DIR$/paper_rank_site/restful-api/errors.py" />
         <option value="$PROJECT_DIR$/paper_rank_site/restful-api/__init__.py" />
-        <option value="$PROJECT_DIR$/paper_rank_site/main/views.py" />
-        <option value="$PROJECT_DIR$/paper_rank_site/restful-api/views.py" />
         <option value="$PROJECT_DIR$/pual.txt" />
+        <option value="$PROJECT_DIR$/paper_rank_site/restful-api/views.py" />
+        <option value="$PROJECT_DIR$/paper_rank_site/restful_api/__init__.py" />
+        <option value="$PROJECT_DIR$/paper_rank_site/templates/bar-chart.html" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/paper_rank_site/__init__.py" />
+        <option value="$PROJECT_DIR$/paper_rank_site/static/js/fundamental/chart.js" />
+        <option value="$PROJECT_DIR$/paper_rank_site/static/js/utility/estimate-loss-function.js" />
+        <option value="$PROJECT_DIR$/paper_rank_site/static/js/fundamental/expanded-area-chart.js" />
+        <option value="$PROJECT_DIR$/paper_rank_site/static/css/chart.css" />
+        <option value="$PROJECT_DIR$/paper_rank_site/static/css/common.css" />
+        <option value="$PROJECT_DIR$/paper_rank_site/static/js/utility/figures.js" />
+        <option value="$PROJECT_DIR$/paper_rank_site/views.py" />
+        <option value="$PROJECT_DIR$/paper_rank_site/main/views.py" />
+        <option value="$PROJECT_DIR$/paper_rank_site/exceptions.py" />
+        <option value="$PROJECT_DIR$/paper_rank_site/restful_api/errors.py" />
+        <option value="$PROJECT_DIR$/paper_rank_site/templates/layout.html" />
+        <option value="$PROJECT_DIR$/paper_rank_site/templates/figures.html" />
+        <option value="$PROJECT_DIR$/paper_rank_site/static/js/fundamental/line-chart.js" />
+        <option value="$PROJECT_DIR$/paper_rank_site/static/js/utility/paper-index.js" />
+        <option value="$PROJECT_DIR$/paper_rank_site/restful_api/views.py" />
+        <option value="$PROJECT_DIR$/paper_rank_site/static/js/fundamental/paper-net.js" />
+        <option value="$PROJECT_DIR$/paper_rank_site/templates/paper-net.html" />
+        <option value="$PROJECT_DIR$/paper_rank_site/static/js/utility/paper-net-index.js" />
       </list>
     </option>
   </component>
@@ -187,8 +277,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1368" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -218,6 +307,188 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utility" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fundamental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restful_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paper_rank_site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -256,7 +527,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in config.py">
+  <component name="RunManager">
+    <configuration default="false" name="Unittests in config.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="paper_rank_site" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/config.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
     <configuration default="false" name="runserver" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -274,22 +561,6 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in config.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="paper_rank_site" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/config.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -433,7 +704,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="paper_rank_site" />
+      <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;.&quot;" />
@@ -441,17 +712,15 @@
       <method />
     </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Python.runserver" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in config.py" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in config.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python.runserver" />
     </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in config.py" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -464,6 +733,7 @@
       <workItem from="1492672840821" duration="9725000" />
       <workItem from="1492743901837" duration="58000" />
       <workItem from="1494662264454" duration="2710000" />
+      <workItem from="1496489628732" duration="642000" />
     </task>
     <task id="LOCAL-00001" summary="add barChart.js">
       <created>1492673796138</created>
@@ -488,7 +758,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12535000" />
+    <option name="totallyTimeSpent" value="13177000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -500,20 +770,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="0" width="1368" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27685326" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.117737" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23606557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36065573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -560,60 +830,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/utility/paper-index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/paper-net.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2772">
-          <caret line="154" column="1" lean-forward="true" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/bar-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="70" column="43" lean-forward="false" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/templates/stacked-area.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/expanded-area-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3996">
-          <caret line="222" column="0" lean-forward="false" selection-start-line="222" selection-start-column="0" selection-end-line="226" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/bar-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/paper_rank_site/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1314">
@@ -636,20 +857,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/runserver.py" />
+    <entry file="file://$PROJECT_DIR$/runserver.py" />
     <entry file="file://$PROJECT_DIR$/paper_rank_site/templates/stacked-area.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -664,56 +873,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/line-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/expanded-area-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="252" column="15" lean-forward="true" selection-start-line="252" selection-start-column="15" selection-end-line="252" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/utility/paper-index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/paper-net.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="154" column="1" lean-forward="false" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/paper_rank_site/templates/estimate-loss-function.js" />
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/heatmap-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="176" column="1" lean-forward="false" selection-start-line="176" selection-start-column="1" selection-end-line="176" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/scatter-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2728">
-          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/bar-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-319">
-          <caret line="119" column="34" lean-forward="false" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/paper_rank_site/templates/stacked-area.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -728,20 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/templates/paper-net.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="3" column="87" lean-forward="true" selection-start-line="3" selection-start-column="87" selection-end-line="3" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/templates/bar-chart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="86" lean-forward="true" selection-start-line="4" selection-start-column="86" selection-end-line="4" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/paper_rank_site/templates/estimate-loss-function.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="521">
@@ -749,64 +895,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/utility/estimate-loss-function.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/css/bar-chart.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/css/stacked-area.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="216" column="0" lean-forward="false" selection-start-line="216" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/css/jquery-ui.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-922">
-          <caret line="32" column="11" lean-forward="false" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/css/bar-chart.css" />
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/css/stacked-area.css" />
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/css/jquery-ui.min.css" />
     <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/third-party/backbone.js" />
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/templates/line-chart.html" />
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/templates/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/templates/figures.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_basics.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-112">
           <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,89 +910,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding>
-            <element signature="e#15#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runserver.py">
+    <entry file="file://$PROJECT_DIR$/runserver.py" />
+    <entry file="file://$PROJECT_DIR$/pual.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
+          <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/restful-api/errors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/main/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/restful-api/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/restful-api/views.py">
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/templates/bar-chart.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paper_rank_site/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -904,22 +932,270 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/ico/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/utility/estimate-loss-function.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="44" column="32" lean-forward="false" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2160">
+          <caret line="120" column="18" lean-forward="false" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/css/reference.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/css/chart.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/exceptions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/main/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/paper_rank_site/main/errors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/restful_api/errors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/restful_api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="21" column="99" lean-forward="false" selection-start-line="21" selection-start-column="99" selection-end-line="21" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="47" column="57" lean-forward="true" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/bar-chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/heatmap-chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="176" column="1" lean-forward="false" selection-start-line="176" selection-start-column="1" selection-end-line="176" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/expanded-area-chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/templates/line-chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/scatter-chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-568">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2232">
+          <caret line="124" column="1" lean-forward="false" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pual.txt">
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/templates/figures.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#div#1;n#div#3;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/restful_api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2430">
+          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/utility/figures.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4626">
+          <caret line="257" column="33" lean-forward="false" selection-start-line="257" selection-start-column="33" selection-end-line="257" selection-end-column="33" />
+          <folding>
+            <marker date="1497406860316" expanded="true" signature="8807:8837" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/paper-net.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3168">
+          <caret line="176" column="9" lean-forward="false" selection-start-line="176" selection-start-column="9" selection-end-line="176" selection-end-column="9" />
+          <folding>
+            <marker date="1497376456928" expanded="true" signature="1048:1106" ph="{...}" />
+            <marker date="1497376456928" expanded="true" signature="5420:5472" ph="{...}" />
+            <marker date="1497376456928" expanded="true" signature="5420:5475" ph="{...}" />
+            <marker date="1497376456928" expanded="true" signature="5514:5623" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/fundamental/line-chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/templates/paper-net.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding>
+            <marker date="1497376391834" expanded="true" signature="595:634" ph="{...}" />
+            <marker date="1497376391834" expanded="true" signature="727:732" ph="{...}" />
+            <marker date="1497376391834" expanded="true" signature="821:834" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="835:2154" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="919:2146" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="949:1453" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="1036:1052" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="1076:1092" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="1160:1176" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="1267:1280" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="1325:1344" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="1415:1442" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="1491:1502" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="1503:1715" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="1580:1596" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="1682:1695" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="1745:2137" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="1830:1846" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="1870:1886" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="1955:1971" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="2103:2116" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="2203:2216" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="2217:3056" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="2262:2399" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="2279:2290" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="2319:2330" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="2347:2358" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="2379:2390" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="2433:3048" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="2463:2719" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="2757:2768" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="2799:3039" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="2816:2827" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="2881:2892" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="2893:2907" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="2926:2937" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="3005:3016" ph="..." />
+            <marker date="1497376391834" expanded="true" signature="3017:3029" ph="..." />
+            <marker date="1497376391834" expanded="false" signature="3825:3838" ph="..." />
+            <marker date="1497376391834" expanded="false" signature="3943:3956" ph="..." />
+            <marker date="1497376391834" expanded="false" signature="4085:4132" ph="..." />
+            <marker date="1497376391834" expanded="false" signature="4302:4349" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paper_rank_site/static/js/utility/paper-net-index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="1" column="55" lean-forward="true" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+          <caret line="289" column="51" lean-forward="false" selection-start-line="289" selection-start-column="23" selection-end-line="289" selection-end-column="51" />
           <folding />
         </state>
       </provider>

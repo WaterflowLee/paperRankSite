@@ -2,7 +2,7 @@
 import os
 from paper_rank_site import create_app
 # from paper_rank_site.models import User, Role
-from flask.ext.script import Manager, Shell
+from flask_script import Manager
 # from flask.ext.migrate import Migrate, MigrateCommand
 app = create_app(os.getenv('FLASK_CONFIG') or 'default')
 manager = Manager(app)
@@ -23,4 +23,6 @@ def test():
 
 
 if __name__ == '__main__':
-	manager.run()
+	# manager.run()
+	app.run()
+

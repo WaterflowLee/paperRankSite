@@ -17,7 +17,6 @@ Chart.prototype.render = function () {
             .attr("width", self._width);
 
         self.renderAxes();
-
         self.defineMainBodyClip();
     }
 

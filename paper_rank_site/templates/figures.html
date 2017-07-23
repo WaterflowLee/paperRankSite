@@ -4,10 +4,155 @@
 {% endblock %}
 {% block css %}
     {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chart.css') }}">
+    <style>
+        h2 {
+            text-align: center;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .slider {
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 10%
+        }
+
+        #journal-contributions-legend {
+            display: block;
+            height: 100%;
+            list-style: none;
+            /* ul 自带上下margin 当我设置 height 为100%时，又由于margin不算在内，因此会导致，其超出container的边界，设置上下margin为
+            0就好了 */
+            margin-bottom: 0%;
+            margin-top: 0%;
+        }
+        #journal-contributions-legend li {
+            display: block;
+            height: 9%;
+        }
+        #journal-contributions-legend li span{
+            font-size: 0.1em;
+            font-weight: lighter;
+        }
+        #journal-contributions-legend li div {
+            display: inline-block;
+            vertical-align: bottom;
+            width: 30%;
+            height: 100%;
+            margin-right: 1%;
+            opacity: 0.6;
+        }
+        #interval-or-percentage span {
+            margin: 2%;
+            display: block;
+            font-size: 2em;
+            font-weight: lighter
+        }
+        #interval-or-percentage select {
+            width: 30%;
+            margin-left: 10%;
+            font-size: 2em;
+        }
+        #loss-value-function-formula-div {
+            width: 100%;
+            height: 20%;
+        }
+        #loss-value-function-formula {
+            display: block;
+            margin-left: 10%;
+            margin-top: 1%;
+            font-size: 1.5em;
+        }
+    </style>
 {% endblock %}
 {% block body %}
+    <h2>平均损失值时间线</h2>
+    <div id="time-line-view" class="view">
+        <div class="chart-or-pic" id="time-line" style="width: 90%;height: 80%;display: block"></div>
+        <div style="margin-top: 2%">
+            <div style="width: 10%;display: inline-block;margin-left: 10%">
+                Interval: <span id="time-line-interval">10</span>
+            </div>
+            <div style="width: 50%;display: inline-block" id="time-line-interval-slider"></div>
+        </div>
+    </div>
+    <h2>累计分布函数</h2>
+    <div class="view" id="cdf-view">
+        <div class="chart-or-pic" id="cdf" style="width: 90%;height: 80%;display: block"></div>
+        <div style="margin-top: 2%">
+            <div style="width: 10%;display: inline-block;margin-left: 10%">
+                Interval: <span id="cdf-interval">10</span>
+            </div>
+            <div style="width: 50%;display: inline-block" id="cdf-slider"></div>
+        </div>
+    </div>
 
+    <h2>损失函数拟合结果</h2>
+    <div id="loss-value-function-view" class="view">
+        <div id="loss-value-function" class="chart-or-pic">
+            <img id="loss-value-function-img" src="{{ url_for('static', filename='imgs/loss_value_functions/lv_func_15_1.png') }}" style="height: 400px">
+        </div>
+        <div class="chart-or-pic-info">
+            <div style="margin-left: 20%" id="interval-or-percentage">
+                <span>Interval:</span>
+                <select id="interval-select" disabled="disabled">
+                    <option>15</option>
+                    <option>20</option>
+                    <option>25</option>
+                    <option>30</option>
+                </select>
+                <br>
+                <span>Percentage:</span>
+                <select id="percentage-select" disabled="disabled">
+                    <option>1%</option>
+                    <option>5%</option>
+                    <option>10%</option>
+                    <option>15%</option>
+                </select>
+            </div>
+            <div id="loss-value-function-formula-div">
+                <span id="loss-value-function-formula">
+                    f(x) = 0.0298x^2 + 1.3243x - 0.9287
+                </span>
+            </div>
+        </div>
+    </div>
+    <h2>期刊贡献分布</h2>
+    <div class="view" id="journal-contributions-view">
+        <div id="journal-contributions" class="chart-or-pic"></div>
+        <div class="chart-or-pic-info">
+            <div style="width: 100%;height: 60%">
+                <ul id="journal-contributions-legend">
+                </ul>
+            </div>
+            <div style="width: 100%;height: 10%;">
+                <h3 style="margin-top: 0;margin-bottom: 0;margin-left: 25%">TOP5+<span id="others">1</span></h3>
+            </div>
+            <div class="slider" id="journal-contributions-slider"></div>
+        </div>
+    </div>
+    <h2>Paper rank 与传统方法的相关性</h2>
+    <div style="height:600px;" id="corrcoef-view" class="view">
+        <div class="chart-or-pic">
+            <img id="corrcoef-img" src="{{ url_for('static', filename='imgs/corrcoef/bivariate_20.png') }}" style="height: 100%">
+        </div>
+        <div class="chart-or-pic-info" style="margin-left: -10%">
+            <div style="width: 100%;height: 30%;margin-top: 20%">
+                <h4 style="margin-top: 2%;margin-left: 5%">大于门限值（2倍均值）的论文的log(loss_value)</h4>
+                <h4 style="margin-top: 2%;margin-left: 25%">Interval:<span id="corrcoef-interval">20</span></h4>
+                <h4 style="margin-top: 2%;margin-left: 25%">loss-value-threshold:<span id="corrcoef-loss-value-threshold">6.6676</span></h4>
+                <h4 style="margin-top: 2%;margin-left: 25%">corrcoef:<span id="corrcoef">0.5391</span></h4>
+                <h4 style="margin-top: 2%;margin-left: 25%">two_tailed_p_value:<span id="corrcoef-two-tailed-p-value">0.0000e+00</span></h4>
+            </div>
+            <div id="corrcoef-slider" class="slider"></div>
+        </div>
+    </div>
 {% endblock %}
 {% block script %}
     {{ super() }}
+    <script src="{{ url_for('static', filename='js/fundamental/chart.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/fundamental/line-chart.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/fundamental/expanded-area-chart.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/utility/figures.js') }}"></script>
 {% endblock %}

@@ -1,4 +1,4 @@
-from flask import Flask 
+from flask import Flask, request
 from config import config
 from pymongo import MongoClient
 
@@ -16,4 +16,14 @@ def create_app(config_name):
 	# import paper_rank_site.views
 	from main import main as main_blueprint
 	app.register_blueprint(main_blueprint)
+	from restful_api import restful_api
+	app.register_blueprint(restful_api)
+
+	@app.after_request
+	def after_request(response):
+		if request.endpoint != 'static':
+			return response
+		response.cache_control.max_age = 0
+		return response
+
 	return app

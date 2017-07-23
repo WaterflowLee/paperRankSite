@@ -48,30 +48,7 @@ def paper(top, id):
 		return json.dumps({"result": "The id is wrong!"})
 
 
-@app.route("/papers/<int:top>/", methods=["GET", "POST"])
-def papers(top):
-	collection = from_collection(top)
-	err = ""
-	if request.method == "GET":
-		return render_template("papers.html", err=err)
-	elif request.method == "POST":
-		start = request.form.get("start", "")
-		end = request.form.get("end", "")
-		if (start == "") or (end == ""):
-			err = "The start and end should not be null"
-			return render_template("papers.html", err=err)
-		else:
-			ret = collection.find({"time":{"$lt":int(end), "$gte":int(start)}},\
-				{"_id": 1, "loss_value": 1, "reference_normalized_weights":1})
-			docs = [doc for doc in ret]
-			if docs:
-				err = "Some thing went wrong when querying the DB"
-				return render_template("papers.html", err=err)
-			else:
-				ret = collection.find({"time":{"$lt":int(end), "$gte":int(start)}})\
-					.sort("max_loss_value", pymongo.DESCENDING).limit(1)
-				max_loss_value = next(ret)["max_loss_value"]
-				return json.dumps({"docs": docs, "max_loss_value": max_loss_value})
+
 
 
 @app.route("/papernet/", methods=["GET"])
